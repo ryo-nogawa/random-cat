@@ -39,3 +39,44 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ------------------------------------------------------------
+# Secrets / credentials (public repository - never commit)
+# ------------------------------------------------------------
+# env files: allow only the sample template
+!.env.example
+
+# private keys & certificates
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+
+# credential files
+credentials.json
+*credentials*.json
+service-account*.json
+*-service-account.json
+secrets.json
+*.secret
+*.secrets
+.npmrc
+.netrc
+
+# local Claude Code settings & private docs
+.claude/settings.local.json
+CLAUDE.local.md
+
+# editor / OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+
+# logs
+*.log
